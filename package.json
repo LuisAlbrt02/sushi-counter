@@ -1,5 +1,5 @@
 {
-  "name": "contador-sushi",
+  "name": "sushi-counter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

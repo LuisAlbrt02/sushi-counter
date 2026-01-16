@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0f172a, #020617);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Layout */
+.app {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subtitle {
+  color: #cbd5f5;
+  margin-bottom: 2rem;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Cards */
+.card {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 20px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,.3);
+}
+
+/* Variants */
+.card.red {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+.card.orange {
+  background: linear-gradient(135deg, #fb923c, #ea580c);
+}
+.card.pink {
+  background: linear-gradient(135deg, #ec4899, #db2777);
+}
+.card.total {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+/* Text */
+.card h2 {
+  margin: 0 0 .5rem;
+}
+
+.count {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.count.big {
+  font-size: 4.5rem;
+}
+
+/* Buttons */
+.btn {
+  position: absolute;
+  background: rgba(255,255,255,.25);
+  border: none;
+  border-radius: 50%;
+  padding: .6rem;
+  color: white;
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+}
+
+.btn:hover {
+  background: rgba(255,255,255,.4);
+  transform: scale(1.1);
+}
+
+.btn.minus {
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn.plus {
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Reset */
+.reset {
+  background: white;
+  color: #020617;
+  border: none;
+  padding: .75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.reset:hover {
+  background: #e5e7eb;
 }
