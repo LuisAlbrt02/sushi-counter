@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sushi-counter/static/css/main.e6c13ad2.css",
+    "main.js": "/sushi-counter/static/js/main.3420ddfd.js",
+    "static/js/453.3f77e888.chunk.js": "/sushi-counter/static/js/453.3f77e888.chunk.js",
+    "index.html": "/sushi-counter/index.html",
+    "main.e6c13ad2.css.map": "/sushi-counter/static/css/main.e6c13ad2.css.map",
+    "main.3420ddfd.js.map": "/sushi-counter/static/js/main.3420ddfd.js.map",
+    "453.3f77e888.chunk.js.map": "/sushi-counter/static/js/453.3f77e888.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.3420ddfd.js"
+  ]
+}
